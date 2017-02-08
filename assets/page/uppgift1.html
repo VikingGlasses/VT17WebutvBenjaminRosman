@@ -9,10 +9,21 @@
 		.my__table {
 			margin: 50px 50px;
 			text-align: left;
+			border-collapse: collapse;
 		}
 
-		.my__table__cell--padding {
-			padding-right: 20px;
+		.my__table__cell--width {
+			width: 20%;
+		}
+
+		.my__table__head {
+			height: 30px;
+			border-bottom: 1px solid #aaaaaa;
+		}
+
+		.my__table__body {
+			background-color: #eeeeee;
+			box-shadow: 5px 5px 10px #777777;
 		}
 
 	</style>
@@ -22,41 +33,41 @@
 
 <table class="my__table">
 
-	<thead>
+	<thead class="my__table__head">
 		<tr>
-			<th class="my__table__cell--padding">
+			<th class="my__table__cell--width">
 				Uppgift
 			</th>
-			<th class="my__table__cell--padding">
+			<th class="my__table__cell--width">
 				Status
 			</th>
-			<th class="my__table__cell--padding">
+			<th class="my__table__cell--width">
 				Länk
 			</th>
 		</tr>
 	</thead>
 
-	<tbody>
+	<tbody class="my__table__body">
 		<tr>
-			<td class="my__table__cell--padding">
+			<td class="my__table__cell--width">
 				#1
 			</td>
-			<td class="my__table__cell--padding">
+			<td class="my__table__cell--width">
 				Klar
 			</td>
-			<td class="my__table__cell--padding">
+			<td class="my__table__cell--width">
 				<a href="uppgift1.html">Uppgift 1</a>
 			</td>
 		</tr>
 
 		<tr>
-			<td class="my__table__cell--padding">
+			<td class="my__table__cell--width">
 				#2
 			</td>
-			<td class="my__table__cell--padding">
+			<td class="my__table__cell--width">
 				Klar
 			</td>
-			<td class="my__table__cell--padding">
+			<td class="my__table__cell--width">
 				<a href="uppgift2.html">Uppgift 2</a>
 			</td>
 		</tr>
