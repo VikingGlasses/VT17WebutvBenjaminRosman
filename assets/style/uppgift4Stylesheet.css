@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.ball {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	display: block;
+	border-radius: 50%;
+	border: 1px solid black;
+	background-color: white;
+	text-align: center;
+}
+
+.ball p {
+	padding-top: 42%;
+}
+
+#ball1 {
+	animation-name: resize__ball;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+#ball1 p {
+	animation-name: resize__text;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+#ball2 {
+	right: 0;
+	animation-name: rotate;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+#ball3 {
+	right: 0;
+	top: 200px;
+	animation-name: rainbow__border;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+#ball4 {
+	top: 20%;
+	animation-name: dropp;
+	animation-duration: 3s;
+	animation-iteration-count: 4;
+}
+
+#ball5 {
+	left: 20%;
+	animation-name: horizontal__move;
+	animation-duration: 1s;
+	animation-iteration-count: 5;
+}
+
+#ball6 {
+	top: 20%;
+	left: 20%;
+	animation-name: rainbow__background;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+#ball7 {
+	top: 20%;
+	left: 35%;
+	animation-name: rest;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+#ball8 {
+	top: 20%;
+	left: 50%;
+}
+
+.main__title {
+	animation-name: rainbow__text;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+body {
+	animation-delay: 3s;
+	animation-name: rainbow__background;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes rainbow__background {
+	0%{
+		background-color: #ff0000;
+	}
+	16.66%{
+		background-color: #ffff00;
+	}
+	33.33%{
+		background-color: #00ff00;
+	}
+	50%{
+		background-color: #00ffff;
+	}
+	66.66% {
+		background-color: #0000ff;
+	}
+	83.33% {
+		background-color: #ff00ff;
+	}
+	100%{
+		background-color: #ff0000;
+	}
+}
+
+@keyframes rainbow__border{
+	0%{
+		border-color: #ff0000;
+	}
+	16.66%{
+		border-color: #ffff00;
+	}
+	33.33%{
+		border-color: #00ff00;
+	}
+	50%{
+		border-color: #00ffff;
+	}
+	66.66% {
+		border-color: #0000ff;
+	}
+	83.33% {
+		border-color: #ff00ff;
+	}
+	100%{
+		border-color: #ff0000;
+	}
+}
+
+@keyframes rainbow__text {
+	0%{
+		color: #ff0000;
+	}
+	16.66%{
+		color: #ffff00;
+	}
+	33.33%{
+		color: #00ff00;
+	}
+	50%{
+		color: #00ffff;
+	}
+	66.66% {
+		color: #0000ff;
+	}
+	83.33% {
+		color: #ff00ff;
+	}
+	100%{
+		color: #ff0000;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes dropp {
+	0% {
+		top: 0%;
+		left: 0%;
+	}
+	10% {
+		top: 85%;
+	}
+	20% {
+		top: 20%;
+	}
+	30% {
+		top: 85%;
+	}
+	40% {
+		top: 40%;
+	}
+	50% {
+		top: 85%;
+	}
+	60% {
+		top: 50%;
+	}
+	70% {
+		top: 85%;
+	}
+	80% {
+		top: 60%;
+	}
+	90% {
+		top: 85%;
+	}
+	100% {
+		top: 85%;
+		left: 85%;
+	}
+}
+
+@keyframes horizontal__move {
+	0% {
+		left: 20%;
+	}
+	50% {
+		left: 85%;
+	}
+	100% {
+		left: 20%;
+	}
+}
+
+@keyframes resize__ball {
+	0%{
+		width: 100px;
+		height: 100px;
+	}
+	50%{
+		width: 200px;
+		height: 200px;
+	}
+	100%{
+		width: 100px;
+		height: 100px;
+	}
+}
+
+@keyframes resize__text {
+	0%{
+		font-size: 1em;
+	}
+	50%{
+		font-size: 2em;
+	}
+	100%{
+		font-size: 1em;
+	}
+}
+
+/* Behövde ändra på tre till attribut för at det skulle bli åtta. */
+@keyframes rest {
+	0% {
+		padding: 200px;
+		margin: 10%;
+		border-radius: 0px;
+	}
+}
