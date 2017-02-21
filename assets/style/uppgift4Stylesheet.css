@@ -94,16 +94,16 @@ body {
 }
 
 @keyframes rainbow__background {
-	0%{
+	0% {
 		background-color: #ff0000;
 	}
-	16.66%{
+	16.66% {
 		background-color: #ffff00;
 	}
-	33.33%{
+	33.33% {
 		background-color: #00ff00;
 	}
-	50%{
+	50% {
 		background-color: #00ffff;
 	}
 	66.66% {
@@ -112,22 +112,22 @@ body {
 	83.33% {
 		background-color: #ff00ff;
 	}
-	100%{
+	100% {
 		background-color: #ff0000;
 	}
 }
 
-@keyframes rainbow__border{
-	0%{
+@keyframes rainbow__border {
+	0% {
 		border-color: #ff0000;
 	}
-	16.66%{
+	16.66% {
 		border-color: #ffff00;
 	}
-	33.33%{
+	33.33% {
 		border-color: #00ff00;
 	}
-	50%{
+	50% {
 		border-color: #00ffff;
 	}
 	66.66% {
@@ -136,22 +136,22 @@ body {
 	83.33% {
 		border-color: #ff00ff;
 	}
-	100%{
+	100% {
 		border-color: #ff0000;
 	}
 }
 
 @keyframes rainbow__text {
-	0%{
+	0% {
 		color: #ff0000;
 	}
-	16.66%{
+	16.66% {
 		color: #ffff00;
 	}
-	33.33%{
+	33.33% {
 		color: #00ff00;
 	}
-	50%{
+	50% {
 		color: #00ffff;
 	}
 	66.66% {
@@ -160,7 +160,7 @@ body {
 	83.33% {
 		color: #ff00ff;
 	}
-	100%{
+	100% {
 		color: #ff0000;
 	}
 }
@@ -225,28 +225,28 @@ body {
 }
 
 @keyframes resize__ball {
-	0%{
+	0% {
 		width: 100px;
 		height: 100px;
 	}
-	50%{
+	50% {
 		width: 200px;
 		height: 200px;
 	}
-	100%{
+	100% {
 		width: 100px;
 		height: 100px;
 	}
 }
 
 @keyframes resize__text {
-	0%{
+	0% {
 		font-size: 1em;
 	}
-	50%{
+	50% {
 		font-size: 2em;
 	}
-	100%{
+	100% {
 		font-size: 1em;
 	}
 }

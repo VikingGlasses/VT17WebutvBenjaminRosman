@@ -31,7 +31,7 @@ body {
 }
 
 .main__content h3 {
-	margin: 5px 0px 0px 5px; 
+	margin: 5px 0px 0px 5px;
 }
 
 .main__content p {
@@ -66,7 +66,6 @@ ul.refs {
 li.ref {
 	font-size: 12px;
 }
-
 
 .footnote {
 	position: fixed;
