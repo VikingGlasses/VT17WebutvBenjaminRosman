@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Validator</title>
+    <link rel="stylesheet" type="text/css" href="../style/uppgift5Stylesheet.css">
+</head>
+<body>
+
+
+<article class="container">
+    <h1 class="container__title">Text Valideringar</h1>
+    <form class="validation__form">
+        <hr>
+        <label>Person nummer: </label><br>
+        <input type="text" id="idNumber" class="validation__input">
+        <label>
+            Result: <span class="validation__result" id="idNumberResult"></span>
+        </label><br>
+
+        <hr>
+        <label>Skottår: </label><br>
+        <input type="text" id="leapYear" class="validation__input">
+        <label>
+            Result: <span class="validation__result" id="leapYearResult"></span>
+        </label><br>
+
+        <hr>
+        <label>Siffersumma: </label><br>
+        <input type="number" id="numberSum" class="validation__input">
+        <label>
+            Result: <span class="validation__result" id="numberSumResult"></span>
+        </label>
+    </form>
+</article>
+
+<script type="text/javascript" src="../script/validation.js"></script>
+</body>
+</html>

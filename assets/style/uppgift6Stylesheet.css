@@ -1,0 +1,79 @@
+/** General stuff **/
+body {
+	background-color: lightgrey;
+}
+
+/** The calculator **/
+.calc {
+	box-shadow: 5px 2px 10px blue;
+	border-radius: 15px;
+	border: 2px solid black;
+	display: inline-block;
+	padding: 10px;
+	background-color: hotpink;
+}
+
+.calc__display {
+	background-color: lightyellow;
+	width: 120px;
+	padding: 10px;
+	display: block;
+	margin-bottom: 5px;
+	overflow: auto;
+
+	border: 1px solid red;
+	border-radius: 5px;
+
+	user-select: auto;
+	cursor: auto;
+}
+
+.calc__number {
+	display: inline-block;
+	background-color: #cccccc;
+	width: 20px;
+	padding: 10px;
+
+	border: 1px solid black;
+}
+
+.calc__sign {
+	display: inline-block;
+	background-color: lightblue;
+	width: 20px;
+	padding: 10px;
+	margin: 5px 1px 1px 1px;
+}
+
+.calc {
+	user-select: none;
+	cursor: pointer;
+}
+
+.calc__sign:hover, .calc__number:hover {
+	background-color: lightyellow;
+}
+
+.calc__sign:active, .calc__number:active {
+	transform: translateY(3px);
+}
+
+/** All results **/
+.resultBlock__list {
+	list-style: none;
+}
+
+.resultBlock {
+	display: block;
+	position: absolute;
+	background-color: lightyellow;
+	width: 500px;
+	height: 500px;
+	overflow: auto;
+	left: 35%;
+	top: 10%;
+}
+
+.resultBlock__title {
+	margin-left: 10px;
+}
