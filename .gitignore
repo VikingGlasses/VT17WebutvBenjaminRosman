@@ -7,8 +7,6 @@
 # User-specific stuff:
 .idea/**/workspace.xml
 .idea/**/tasks.xml
-.idea/**/encodings.xml
-.idea/**/vcs.xml
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
@@ -70,3 +68,8 @@ modules.xml
 .nfs*
 
 # End of https://www.gitignore.io/api/linux,intellij+iml
+
+# Project-specific
+.idea/**/encodings.xml
+.idea/**/vcs.xml
+.idea/**/Project_Default.xml
